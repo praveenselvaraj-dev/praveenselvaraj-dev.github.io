@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <style>
+    .project-item {
+      align-content: center;
+      width: 250px;
+      /* Adjust width as needed */
+      height: 250px;
+      /* Adjust height as needed */
+    }
+
+    .project-img {
+      align-content: center;
+      position: relative;
+    }
+
+    .project-item-icon-box {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .project-item-icon-box ion-icon {
+      font-size: 24px;
+      /* Adjust icon size as needed */
+    }
+
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .project-item {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project-img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Praveen Kumar" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Praveen Kumar">Praveen Kumar</h1>
+
+          <p class="title">Mobile App Developer(Native Android/iOS & Flutter)</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:praveenselvaraj1014@gmail.com" class="contact-link">praveenselvaraj1014@gmail.com</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 8190943117" class="contact-link">+91 8190943117</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="May 5, 1999">May 5, 1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Coimbatore</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/praveen-selvaraj-938476189/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedIn"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/YugandharKumar05" class="social-link" target="_blank">
+              <ion-icon name="logo-Github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://play.google.com/store/apps/developer?id=Yugandhar+Kumar" class="social-link"
+              target="_blank">
+              <ion-icon name="logo-google-playstore"></ion-icon>
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m a dedicated Senior Mobile App Developer with 4+ years of experience crafting powerful, user-centric
+            applications for Android, iOS, and cross-platform (Flutter) environments. My passion lies in building apps
+            that not only function seamlessly but also deliver clean code, strong performance, and a delightful user
+            experience.
+
+            Skilled in Kotlin, Swift, and Dart, I specialize in transforming design concepts into real-world
+            applications that scale. I’ve worked across the full app lifecycle — from wireframes and APIs to release and
+            maintenance — ensuring quality at every step. I follow modern architecture patterns like MVVM, BLoC, and
+            Clean Architecture, and I’m well-versed in optimizing app performance, managing state efficiently, and
+            ensuring reliability through thorough testing.
+
+            I actively collaborate with cross-functional teams, contribute to agile processes, and constantly explore
+            new technologies to stay ahead. Whether it's integrating Firebase for analytics and crash reporting, or
+            tuning animations in Flutter for a smooth UX, I take pride in delivering production-ready solutions that
+            users love.
+          </p>
+
+          <!-- <p>
+           My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+           Moreover, I
+           add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+           across your
+           message and identity in the most creative way. I created web design for many famous brand companies.
+         </p> -->
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Android & iOS mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for Android & iOS in Native and Hybrid.
+                </p>
+              </div>
+
+            </li>
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI design</h4>
+
+                <p class="service-item-text">
+
+                  Skilled in creating user-friendly Android UIs that enhance the overall user experience.
+              </div>
+
+            </li> -->
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UX Thinker</h4>
+
+                <p class="service-item-text">
+
+                  Creative Android UX thinker with a passion for crafting intuitive and delightful user experiences.
+              </div>
+
+            </li> -->
+
+
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Blogger</h4>
+
+                <p class="service-item-text">
+                  Android blogger who writes helpful and interesting articles about app development, UI/UX trends, and best practices. Shares knowledge to educate and inspire other Android developers.
+                </p>
+              </div>
+
+            </li> -->
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Sandeep" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mohan Sandeep Kumar Kella</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Social links
+                  <ul class="social-list">
+
+                    <li class="social-item">
+                      <a href="https://www.linkedin.com/in/sandeep-kella-998308120/" class="social-link"
+                        target="_blank">
+                        <p>LinkedIn</p>
+                        <ion-icon name="logo-linkedIn"></ion-icon>
+                      </a>
+                    </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title></h4>
+
+              <time datetime="2021-06-14"> </time>
+
+              <div data-modal-text>
+                <p>
+
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="Published Apps">
+
+          <h3 class="h3 apps-title">Published Apps</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item" style="text-align: center;">
+
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.calculator" target="_blank">
+                <h1 style="color: #FFDB70;">Calculator</h1>
+                <br>
+                <img src="./assets/images/calculatoricon.png" alt="App logo" width="40" height="160">
+              </a>
+
+            </li>
+
+            <li class="clients-item" style="text-align: center;">
+
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.notes" target="_blank">
+                <h1 style="color: #FFDB70;">Notes </h1>
+                <br>
+                <img src="./assets/images/Notes%20image.jpg" alt="App logo" width="40" height="160">
+              </a>
+
+            </li>
+
+            <li class="clients-item" style="text-align: center;">
+
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.directionalstepcounter"
+                target="_blank">
+                <h1 style="color: #FFDB70;">Compass</h1>
+                <br>
+                <img src="./assets/images/Compass.png" alt="App logo" width="40" height="160">
+              </a>
+
+            </li>
+
+
+
+            <li class="clients-item" style="text-align: center;">
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.tictactoegame" target="_blank">
+                <h1 style="color: #FFDB70;">Tic Tac Toe </h1>
+                <br>
+                <img src="./assets/images/TicTacToe.png" alt="App logo" width="40" height="160">
+              </a>
+
+            </li>
+
+
+            <li class="clients-item" style="text-align: center;">
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.textrecognizer"
+                target="_blank">
+                <h1 style="color: #FFDB70;">Text Recognizer</h1>
+                <br>
+                <img src="./assets/images/textrecognizer.png" alt="App logo" width="40" height="160">
+              </a>
+
+            </li>
+
+            <li class="clients-item" style="text-align: center;">
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.dice" target="_blank">
+                <h1 style="color: #FFDB70;">Roll a Dice</h1>
+                <br>
+                <img src="./assets/images/dice.png" alt="App logo" width="40" height="160">
+              </a>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Work Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h3 timeline-item-title">Software Engineer</h4>
+              <h4 class="h4 timeline-item-title">DJAX Technologies Pvt Ltd</h4>
+              <span>October 2024 - Till Date</span>
+              <ul> <!-- Start of bullet points -->
+                <li class="timeline-text">Developed mobile ad delivery SDKs for both Native Android (Java) and iOS
+                  (Swift), supporting integration into third-party applications.</li>
+                <li class="timeline-text">Integrated ad mediation platforms like Google AdMob, Unity Ads, and Chartboost
+                  into custom SDKs to optimize revenue streams.</li>
+                <li class="timeline-text">Implemented location-based ad delivery to display personalized banner ads and
+                  notifications based on geolocation.</li>
+                <li class="timeline-text">Built retargeting logic to re-engage users with relevant ads after a 7-day
+                  inactivity window.</li>
+                <li class="timeline-text">Created flexible ad formats such as interstitial, banner, and in-article video
+                  ads using VAST and WebView integrations.</li>
+                <li class="timeline-text">Maintained cross-platform compatibility and performance by testing SDKs on
+                  various Android/iOS devices and operating system versions.</li>
+                <li class="timeline-text">Collaborated with backend and QA teams to ensure seamless ad rendering,
+                  tracking, and user behavior analytics.</li>
+                <li class="timeline-text">Technical Skills: Android (Java), iOS (Swift), AdMob, Unity Ads, Chartboost,
+                  VAST, WebView, Firebase, Git</li>
+              </ul> <!-- End of bullet points -->
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h3 timeline-item-title">Senior Android & iOS Developer</h4>
+              <h4 class="h4 timeline-item-title">Ausweg Info Controls Pvt Ltd</h4>
+              <span>March 2023 - October 2024</span>
+              <ul> <!-- Start of bullet points -->
+                <li class="timeline-text">Designed and developed cross-platform mobile applications using Flutter
+                  (Dart), Jetpack Compose Multiplatform, and SwiftUI for iOS.</li>
+                <li class="timeline-text">Built and deployed multiple IoT-based enterprise applications, including CMMS,
+                  WMS, EMS, and Attendance Management apps.</li>
+                <li class="timeline-text">Integrated apps with hardware via BLE, RFID (EPC tag scanning), and other IoT
+                  sensors to collect and process real-time data.</li>
+                <li class="timeline-text">Managed backend interactions using REST APIs, Firebase, and local storage
+                  solutions like SQLite and Shared Preferences.</li>
+                <li class="timeline-text">Mentored junior developers in mobile app architecture, clean code practices,
+                  and debugging techniques.</li>
+                <li class="timeline-text">Collaborated with hardware engineers, QA teams, and project managers to ensure
+                  seamless IoT integration and app performance.</li>
+                <li class="timeline-text">Led efforts to improve app reliability, scalability, and modularity using BLoC
+                  and MVVM architecture patterns.</li>
+                <li class="timeline-text">Technical Skills: Flutter, Dart, Kotlin Multiplatform, SwiftUI, BLE, RFID,
+                  SQLite, REST API, Firebase, Git</li>
+              </ul> <!-- End of bullet points -->
+            </li>
+
+
+            <li class="timeline-item">
+              <h4 class="h3 timeline-item-title">Android Developer</h4>
+              <h4 class="h4 timeline-item-title">Invicious MetaCorps Pvt Ltd</h4>
+              <span>March 2021 - March 2023</span>
+              <ul> <!-- Start of bullet points -->
+                <li class="timeline-text">Developed a full-featured Social Media Android application using Java,
+                  including features like user profiles, real-time chat, posts, likes, and notifications.</li>
+                <li class="timeline-text">Integrated Firebase services such as Firestore, Authentication, and Cloud
+                  Messaging for seamless user experience and backend support.</li>
+                <li class="timeline-text">Implemented RESTful API communication using Retrofit for data synchronization
+                  with backend servers.</li>
+                <li class="timeline-text">Handled image uploads, media previews, and feed management using local storage
+                  and cloud integration.</li>
+                <li class="timeline-text">Ensured app security with user authentication, session management, and secure
+                  data handling practices.</li>
+                <li class="timeline-text">Collaborated closely with UI/UX designers to implement clean and interactive
+                  interfaces based on Material Design principles.</li>
+                <li class="timeline-text">Technical Skills: Java, Android SDK, Firebase (Auth, Firestore, FCM),
+                  Retrofit, Glide, Material Design, Git</li>
+              </ul> <!-- End of bullet points -->
+            </li>
+
+
+          </ol>
+
+          <br><br>
+
+          <header>
+            <!-- <h2 class="h2 article-title">Resume</h2> -->
+          </header>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Short Course</h4>
+                <h4 class="h4 timeline-item-title">Qtree Technologies, Coimbatore, TamilNadu</h4>
+
+                <span>2020 - 2021</span>
+                <p class="timeline-text">
+                 Android Application Development Certification
+                </p>
+
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Diploma</h4>
+                <h4 class="h4 timeline-item-title">C.I.T. Sandwich Polytechnic College, Coimbatore, TamilNadu</h4>
+
+                <span>2014 - 2017</span>
+
+                <p class="timeline-text">
+                  Diploma in Chemical Engineering
+                </p>
+                <p class="timeline-text">
+                  Percentage : 55%
+                </p>
+
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Higher Secondary Education</h4>
+
+                <h4 class="h4 timeline-item-title">Govt Boyses Higher Secondary School, Coimbatore, TamilNadu </h4>
+
+                <span>2010 - 2014</span>
+
+              
+                <p class="timeline-text">
+                  Percentage : 60%
+                </p>
+
+              </li>
+
+              <!-- <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Secondary School</h4>
+                <h4 class="h4 timeline-item-title">St. Mary's English Medium High School, Kankipadu, Andhra Pradesh</h4>
+
+                <span>2015</span>
+
+                <p class="timeline-text">
+                  Percentage : 7.8 CGPA
+                </p>
+
+                <p class="timeline-text">
+                  Secondary schooling from Secondary School Certification(SSC)
+                </p>
+
+              </li> -->
+
+            </ol>
+
+          </section>
+
+          <section class="timeline">
+
+            <!--          <div class="title-wrapper">-->
+            <!--            <div class="icon-box">-->
+            <!--              <ion-icon name="book-outline"></ion-icon>-->
+            <!--            </div>-->
+
+            <!--            <h3 class="h3">Experience</h3>-->
+            <!--          </div>-->
+
+
+
+          </section>
+
+          <section class="skill">
+
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Android</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Ui & Ux</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+
+              </li>
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Kotlin</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Golang</h5>
+                  <data value="90">65%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Linux</h5>
+                  <data value="90">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Git</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Google Play Console</h5>
+                  <data value="100">100%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </section>
+
+          <br><br><br>
+
+          <!--        <section>-->
+          <!--          <a href="./assets/images/Yugandhar%20Kumar%20Resume.pdf" download>Clich here to download my resume</a>-->
+          <!--          <img src="./assets/images/resume-icon.png" alt="Design digest #79" loading="lazy">-->
+          <!--        </section>-->
+          <section>
+            <h3 class="h3 Resume-title">Resume/CV</h3>
+
+
+            <li class="project-item  active" data-filter-item data-category="Android Application">
+              <a href="./assets/images/Resume Praveen Kumar S  (1).pdf" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <center>
+                      <ion-icon name="eye-outline"></ion-icon>
+                      <p><small>Check out my resume</small></p>
+                    </center>
+
+                  </div>
+
+                  <img src="./assets/images/resume copy.png" alt="" loading="lazy" width="600" height="600">
+
+                </figure>
+
+
+              </a>
+            </li>
+          </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <p style="color: #D6D6D6;">Explore my extensive portfolio of over 15+ Android applications available on the
+          Google Play Store. From productivity tools to games, my diverse collection showcases a range of innovative and
+          user-friendly apps. Click below to discover more.</p>
+
+        <!-- <p style="color: hsl(0, 0%, 100%);">Explore my extensive portfolio of over 15+ Android applications available on the Google Play Store. From productivity tools to games, my diverse collection showcases a range of innovative and user-friendly apps. Click below to discover more.</h> -->
+        <li class="project-item  active" data-filter-item data-category="Android Application">
+          <a href="https://play.google.com/store/apps/developer?id=Ausweg+Info+Controls+Pvt+Ltd&hl=en_IN"
+            target="_blank">
+            <br><br>
+            <!-- <ion-icon name="logo-google-playstore"></ion-icon> -->
+            <h3 class="project-title" style="color: #FFDB70;">Playstore Portfolio</h3>
+
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <center>
+                  <ion-icon name="eye-outline"></ion-icon>
+                  <h6><small>Check out my apps on Play Store</small></h6>
+                </center>
+
+              </div>
+
+              <img src="./assets/images/google-play-hero.svg" alt="Playstore portfolio" loading="lazy">
+            </figure>
+
+
+            <!-- <p class="project-category">Android Application</p> -->
+
+          </a>
+        </li>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active">
+                <p style="color: #D6D6D6;">Here are the some sample Android applications </p>
+              </button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <!-- <button data-select-item>Android Application</button> -->
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+
+            <li class="project-item  active" data-filter-item data-category="Android Application">
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.calculator" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <center>
+                      <ion-icon name="eye-outline"></ion-icon>
+                      <!-- <h6><small>Click here to view on Playstore</small></h6> -->
+                    </center>
+
+                  </div>
+
+                  <img src="./assets/images/calculatoricon.png" alt="Calculator" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" style="color: #FFDB70;">Calculator</h3>
+
+                <!-- <p class="project-category">Android Application</p> -->
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="Android Application">
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.notes" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <center>
+                      <ion-icon name="eye-outline"></ion-icon>
+                      <!-- <h6><small>Click here to view on Playstore</small></h6> -->
+                    </center>
+
+                  </div>
+
+                  <img src="./assets/images/Notes%20image.jpg" alt="Notes" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" style="color: #FFDB70;">Notes</h3>
+
+                <!-- <p class="project-category">Android Application</p> -->
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Android Application">
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.directionalstepcounter"
+                target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <center>
+                      <ion-icon name="eye-outline"></ion-icon>
+                      <!-- <h6><small>Click here to view on Playstore</small></h6> -->
+                    </center>
+
+                  </div>
+
+                  <img src="./assets/images/Compass.png" alt="Compass & Pedometer" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" style="color: #FFDB70;">Compass & Pedometer</h3>
+
+                <!-- <p class="project-category">Android Application</p> -->
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Android Application">
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.tictactoegame" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <center>
+                      <ion-icon name="eye-outline"></ion-icon>
+                      <!-- <h6><small>Click here to view on Playstore</small></h6> -->
+                    </center>
+
+                  </div>
+
+                  <img src="./assets/images/TicTacToe.png" alt="Tic Tac Toe" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" style="color: #FFDB70;">Tic Tac Toe</h3>
+
+                <!-- <p class="project-category">Android Application</p> -->
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="Android Application">
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.textrecognizer"
+                target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <center>
+                      <ion-icon name="eye-outline"></ion-icon>
+                      <!-- <h6><small>Click here to view on Playstore</small></h6> -->
+                    </center>
+
+                  </div>
+
+                  <img src="./assets/images/textrecognizer.png" alt="Text Recognizer" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" style="color: #FFDB70;">Text Recognizer</h3>
+
+                <!-- <p class="project-category">Android Application</p> -->
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Android Application">
+              <a href="https://play.google.com/store/apps/details?id=com.yugandhar_kumar.dice" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <center>
+                      <ion-icon name="eye-outline"></ion-icon>
+                      <!-- <h6><small>Click here to view on Playstore</small></h6> -->
+                    </center>
+
+                  </div>
+
+                  <img src="./assets/images/dice.png" alt="Roll a Dice" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" style="color: #FFDB70;">Roll a Dice</h3>
+
+                <!-- <p class="project-category">Android Application</p> -->
+
+              </a>
+            </li>
+
+          </ul>
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/library-management-system-project-in-java-48c116e81259"
+                target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Library-Management-System-Project-in-Java.jpg" alt="Design digest #79"
+                    loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Apr 18, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Library Management System Project in Java</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/interface-cb3c9c9b6afb" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Interface%20in%20Java.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 10, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Interface in Java</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/trees-graphs-5ebb1fef0a53" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/trees-graphs.jpeg" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 10, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Trees & Graphs</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/java-loop-control-statements-4673a301738b" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/LoopControl.png" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 10, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Loop Control Statements in Java</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/pre-increment-vs-post-increment-c2fce7c12498"
+                target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/increment.png" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 10, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Pre-increment vs Post-increment</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/history-of-java-91f7fe7bae1" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/History-of-java.webp" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 10, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">History of Java</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/stacks-and-queues-353dc67544ce" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/StackQuee.webp" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 8, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Stacks & Quees</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/why-java-is-platform-independent-and-robust-c2cfe4b8b71b"
+                target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Platform%20Independent%20and%20robust.jpg" alt="Design digest #79"
+                    loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 8, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Why java is platform-independent and robust</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/abstraction-dfdf5b2760aa" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ABSTRACTION-IN-JAVA.png" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 8, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Abstraction in Java</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/inheritance-2dae9f4f5082" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Inheritance-in-java.png" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 7, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Inheritance in Java</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/linkedlist-in-java-b5e6266dcae9" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/linked-list.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 7, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">LinkedList</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/polymorphism-in-java-ee8a12fb8344" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Polymorphism.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 6, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Polymorphism</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/arrays-c5a00de6c32c" target="_blank">
+
+                <figure class="blog-banner-box">
+
+                  <img src="./assets/images/Arrays.webp" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Mar 1, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Arrays</h3>
+
+                  <p class="blog-text">
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@yugandharkumar05/what-is-java-and-features-of-java-2c3055e33ae9"
+                target="_blank">
+
+                <figure class="blog-banner-box">
+
+                  <img src="./assets/images/Java-Features.png" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Medium article</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 28, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Java & Java Features</h3>
+
+                  <p class="blog-text">
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/pulse/mastering-layouts-constraintlayout-android-dharmavarapu/?trackingId=e7SK6M4OScqhhU3yB0hHig%3D%3D"
+                target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ConstraintLayout.png" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">LinkedIn article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">May 26, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Mastering Layouts with ConstraintLayout in Android</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/pulse/layouts-android-yugandhar-kumar-dharmavarapu/?trackingId=e7SK6M4OScqhhU3yB0hHig%3D%3D"
+                target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Android-layout.png" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">LinkedIn article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">May 22, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Layouts in Android</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/pulse/how-become-android-developer-fresher-yugandhar-kumar-dharmavarapu/?trackingId=e7SK6M4OScqhhU3yB0hHig%3D%3D"
+                target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/How-to-Become-an-Android-Developer.webp" alt="Design digest #79"
+                    loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">LinkedIn article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">May 18, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">How to become Android developer as fresher</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/pulse/basic-java-interview-questions-freshers-yugandhar-kumar-dharmavarapu/?trackingId=e7SK6M4OScqhhU3yB0hHig%3D%3D"
+                target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Java-Interview-Questions-and-Answers-1024x576.jpg" alt="Design digest #79"
+                    loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">LinkedIn article</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">May 15, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Basic Java Interview questions for Freshers</h3>
+                  <p class="blog-text">
+                  </p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
